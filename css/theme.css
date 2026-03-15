@@ -1,0 +1,58 @@
+/* ============================================================
+   APEX.AI — Theme Variables (Clean White & Blue)
+   To change the theme, only edit the :root variables here.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Backgrounds */
+  --bg:       #f0f4f8;
+  --bg2:      #e8edf3;
+  --surface:  #ffffff;
+  --surface2: #f5f8fb;
+
+  /* Borders */
+  --border:   #d0dae6;
+  --border2:  #b8c8d8;
+
+  /* Brand colours */
+  --accent:   #1a6ef5;
+  --accent2:  #4a8ff7;
+  --accent3:  #0ea5e9;
+  --green:    #059669;
+
+  /* Text */
+  --text:     #0f1c2e;
+  --text2:    #4a5f78;
+  --text3:    #8a9db5;
+
+  /* Utility */
+  --glow:      rgba(26, 110, 245, 0.10);
+  --shadow:    0 1px 4px rgba(15,28,46,.08), 0 4px 16px rgba(15,28,46,.06);
+  --shadow-lg: 0 4px 24px rgba(15,28,46,.12), 0 1px 4px rgba(15,28,46,.06);
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  overflow: hidden;
+}
+
+button, input, select, textarea { font-family: inherit; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #a0b4cc; }
+
+/* Animations */
+@keyframes mi  { from { opacity:0; transform:translateY(6px); }  to { opacity:1; transform:translateY(0); } }
+@keyframes tb  { 0%,60%,100% { transform:translateY(0); }        30% { transform:translateY(-4px); } }
+@keyframes ti  { from { opacity:0; transform:translateX(-50%) translateY(6px); } to { opacity:1; transform:translateX(-50%) translateY(0); } }
+@keyframes spin { to { transform: rotate(360deg); } }
